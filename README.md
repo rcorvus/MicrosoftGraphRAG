@@ -6,8 +6,8 @@ NOTE: ChatGPT 4 Turbo is pricey, and indexing this book cost about $5-$10 and to
 ### Step 1: Create a new folder ```MicrosoftGraphRAG``` and a folder in that called ```input```  
 
 ### Step 2: Save your book in UTF-8 encoded in your input folder
-I downloaded the 'A Christmas Carol' book in my web browser from https://www.gutenberg.org/cache/epub/24022/pg24022.txt and copy/pasted into Notepad and saved as UTF-8 encoding.  The instructions on the Microsoft just saved the 200 OK output of the call rather than the file itself.
-NOTE: Notepad++ did not save the txt file as UTF-8 that the indexer recognized, and running the indexer would get this error 
+I downloaded the 'A Christmas Carol' book in my web browser from https://www.gutenberg.org/cache/epub/24022/pg24022.txt and copy/pasted into Notepad and saved as UTF-8 encoding.  The instructions on the Microsoft just saved the 200 OK output of the call rather than the file itself.  
+NOTE: Notepad++ did not save the txt file as UTF-8 that the indexer recognized, and running the indexer would get this error:  
 ```
 File "<frozen codecs>", line 322, in decode
 UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
