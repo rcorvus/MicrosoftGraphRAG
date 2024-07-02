@@ -1,4 +1,4 @@
-# MicrosoftGraphRAG
+# Microsoft GraphRAG + ChatGPT 4 Turbo
 ## Using Microsoft GraphRAG + ChatGPT, we index the book "A Christmas Carol" and ask complex relationship questions about the text  
 The instructions on the Microsoft site are mostly complete, as is tradition, so here are the corrections that actually make it work.  
 NOTE: ChatGPT 4 Turbo is pricey, and indexing this book cost about $5-$10 and took about 10-15 minutes.  
