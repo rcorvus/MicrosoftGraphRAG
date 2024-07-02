@@ -30,6 +30,7 @@ You get a very long output explaining in detail what occurred.
 
 ### Step 5: Ask questions
 Now that you've indexed the document into the graph, you can ask it questions through ChatGpt.  
+Using the graphrag.query the first time generates a lancedb stored in the directory which is uses for any further questions.  
 
 #### Global questions
 
@@ -37,12 +38,25 @@ Use a global search for high-level questions:
 ```
 python -m graphrag.query --root ./ --method global "What are the top themes in this story?"
 ```
+
+The AI still struggles with "Why?" questions:  
 ```
-python -m graphrag.query --root ./ --method global "Why did Scrooge buy the Krachet family a goose?"
+python -m graphrag.query --root ./ --method global "Why did Scrooge buy the Cratchit family a goose?"
 ```
+Response:  
+```
+SUCCESS: Global Search Response: I am sorry but I am unable to answer this question given the provided data.
+```
+![image](https://github.com/rcorvus/MicrosoftGraphRAG/assets/5025458/7b087e80-1084-4120-bd52-cbcb7b396f6d)  
+
 
 Use a local search for more specific questions about a specific character:  
 ```
 python -m graphrag.query --root ./ --method local "Who is Tiny Tim, what is his last name, and what are his main relationships?"
 ```
- 
+
+```
+Tiny Tim is a pivotal character in the classic narrative, known for his optimistic outlook and the famous line he utters, symbolizing hope and goodwill. He is a member of the Cratchit family, which provides him with his last name, making him Tiny Tim Cratchit. His character is central to the story's themes of redemption, the importance of family, and kindness.
+```  
+ ![image](https://github.com/rcorvus/MicrosoftGraphRAG/assets/5025458/0f1c0f1a-41ce-4472-aaa2-69e1d15f02c6)
+
