@@ -35,12 +35,42 @@ Using the graphrag.query the first time generates a lancedb stored in the direct
 
 #### Global questions
 
-Use a global search for high-level questions:  
+Use a global search for high-level questions and it can provide incredibly insightful responses worthy of a book critic, including citations:  
 ```
 python -m graphrag.query --root ./ --method global "What are the top themes in this story?"
 ```
+Response:  
+```
+### Top Themes in the Story
 
-The AI still struggles with "Why?" questions:  
+The story we're examining is rich with themes that delve into human nature, societal values, and the potential for personal transformation. Below, we explore the most significant themes that stand out in the narrative.
+
+#### Transformation and Redemption
+
+At the heart of the story is the profound transformation and redemption of Ebenezer Scrooge. Initially portrayed as a miserly and isolated figure, Scrooge undergoes a remarkable journey to become a generous and compassionate individual. This change is not superficial but touches the core of his being, affecting how he views the world and interacts with those around him. The narrative meticulously charts Scrooge's evolution, making it a central pillar of the story [Data: Reports (24, 25, 23, 21, 14, +more)].
+
+#### The Importance of Family and Social Connections
+
+The narrative places a strong emphasis on the value of family and social connections, particularly through Scrooge's interactions with characters like Bob Cratchit and his family. These interactions are pivotal, showcasing a shift in Scrooge's attitude from indifference to a deep sense of care and responsibility towards others. The transformation in his relationship with the Cratchit family serves as a microcosm of his overall change, highlighting the theme's importance in the story [Data: Reports (10, 9, 14, 16, +more)].
+
+#### The Spirit of Christmas as a Catalyst
+
+The spirit of Christmas acts as a powerful catalyst for change, both for Scrooge and the broader community. The holiday's emphasis on generosity, compassion, and community celebration is woven throughout the narrative, serving as a backdrop for Scrooge's personal transformation. This theme underscores the potential of the Christmas spirit to inspire change and foster a sense of unity and goodwill among people [Data: Reports (18, 21, 23, 25, +more)].
+
+#### Impact of Personal Choices
+
+The story explores the impact of personal choices on both the individual and those around them. Through Scrooge's reflections on his past, present, and future, guided by the spirits, the narrative delves into how one's actions can profoundly affect others. This theme is a critical examination of responsibility and the interconnectedness of human lives, emphasizing the importance of making choices that are beneficial not just for oneself but for the community at large [Data: Reports (24, 25, 7, 13, +more)].
+
+#### Generosity and Compassion
+
+Finally, the virtues of generosity and compassion are highlighted as essential qualities for a fulfilling life. Scrooge's transformation is marked by his newfound willingness to support and improve the lives of others, exemplified by his actions towards the Cratchit family. This theme is a testament to the story's belief in the inherent goodness of people and the idea that positive change is always possible [Data: Reports (24, 10, 14, 21, +more)].
+
+In conclusion, the story weaves together these themes to offer a rich tapestry of lessons on human nature, the power of change, and the importance of compassion and community. Through the character of Ebenezer Scrooge, it presents a hopeful narrative that suggests no one is beyond redemption, and that the spirit of Christmas can be a powerful force for good in the world.
+```
+![image](https://github.com/rcorvus/MicrosoftGraphRAG/assets/5025458/92b0cad4-81a2-476c-840d-2047ab7c999a)
+
+
+However, the AI still struggles with "Why?" questions:  
 ```
 python -m graphrag.query --root ./ --method global "Why did Scrooge buy the Cratchit family a goose?"
 ```
