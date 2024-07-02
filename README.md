@@ -4,7 +4,7 @@ As you can see in the responses below, such as "What are the themes of the book?
 It can even make deductions that are never explicitly spelled out in the text, such as being able to correctly deduce that Tiny Tim's last name must be Cratchit, making him "Tiny Tim Cratchit".  
 However, it still struggles with the "Why?" questions.  
 
-The instructions on the Microsoft site are  *mostly*  complete, as is tradition :smile:, so I've included the the corrections below that actually make it work.  
+The instructions on the Microsoft site are  *mostly*  complete, as is tradition :smile:, so I've included the the corrections below that make it work.  
 NOTE: ChatGPT 4 Turbo is pricey, and indexing this book cost about $5-$10 and took about 10-15 minutes.  
 I've already indexed the book in this repo, so you should be able to start asking questions straight away and save some time/money.  
 
