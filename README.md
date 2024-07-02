@@ -1,7 +1,8 @@
 # Microsoft GraphRAG + ChatGPT 4 Turbo
 ## Using Microsoft GraphRAG + ChatGPT, we index the book "A Christmas Carol" and ask complex relationship questions about the text  
-As you can see in the responses below, the AI system is able to make surprisingly insightful responses, worthy of a book critic, including citations. However, it still struggles with the "Why?" questions.  
+As you can see in the responses below, the AI system is able to make surprisingly insightful responses, worthy of a book critic, including citations.  
 It can even make deductions that are never explicitly spelled out in the text, such as being able to correctly deduce that Tiny Tim's last name must be Cratchit, making him "Tiny Tim Cratchit".  
+However, it still struggles with the "Why?" questions.  
 
 The instructions on the Microsoft site are  *mostly*  complete, as is tradition :smile:, so I've included the the corrections below that actually make it work.  
 NOTE: ChatGPT 4 Turbo is pricey, and indexing this book cost about $5-$10 and took about 10-15 minutes.  
