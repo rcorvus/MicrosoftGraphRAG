@@ -50,14 +50,20 @@ SUCCESS: Global Search Response: I am sorry but I am unable to answer this quest
 ```
 ![image](https://github.com/rcorvus/MicrosoftGraphRAG/assets/5025458/7b087e80-1084-4120-bd52-cbcb7b396f6d)  
 
+#### Local questions  
+Use a local search for more specific questions about a specific character.
 
-Use a local search for more specific questions about a specific character:  
+For example, the AI is able to deduce that Tiny Tim's last name must be Cratchit, making him "Tiny Tim Cratchit":  
 ```
 python -m graphrag.query --root ./ --method local "Who is Tiny Tim, what is his last name, and what are his main relationships?"
 ```
 
 ```
-Tiny Tim is a pivotal character in the classic narrative, known for his optimistic outlook and the famous line he utters, symbolizing hope and goodwill. He is a member of the Cratchit family, which provides him with his last name, making him Tiny Tim Cratchit. His character is central to the story's themes of redemption, the importance of family, and kindness.
+Tiny Tim is a pivotal character in the classic narrative, known for his optimistic outlook and the famous line he utters, symbolizing hope and goodwill.  
+
+He is a member of the Cratchit family, which provides him with his last name, making him Tiny Tim Cratchit.  
+
+His character is central to the story's themes of redemption, the importance of family, and kindness.
 ```  
  ![image](https://github.com/rcorvus/MicrosoftGraphRAG/assets/5025458/0f1c0f1a-41ce-4472-aaa2-69e1d15f02c6)
 
