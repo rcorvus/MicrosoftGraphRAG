@@ -1,9 +1,11 @@
 # Microsoft GraphRAG + ChatGPT 4 Turbo
 ## Using Microsoft GraphRAG + ChatGPT, we index the book "A Christmas Carol" and ask complex relationship questions about the text  
-The instructions on the Microsoft site are mostly complete, as is tradition, so here are the corrections that actually make it work.  
+As you can see in the responses below, the AI system is able to make surprisingly insightful responses, worthy of a critic, including citations. However, it still struggles with the "Why?" questions.  It can even make deductions that are never explicitly spelled out in the text, such as knowing that Tiny Tim's last name must be Cratchit.  
+The instructions on the Microsoft site are mostly complete, as is tradition, so I've included the the corrections below that actually make it work.  
 NOTE: ChatGPT 4 Turbo is pricey, and indexing this book cost about $5-$10 and took about 10-15 minutes.  
 I've already indexed the book in this repo, so you should be able to start asking questions straight away and save some time/money.  
 
+## Index the book  
 ### Step 1: Create a new folder ```MicrosoftGraphRAG``` and a folder in that called ```input```  
 
 ### Step 2: Save your book in UTF-8 encoded in your input folder
@@ -29,11 +31,11 @@ Run the indexing pipeline, "A Christmas Carol" took about 10-15 minutes on my la
 
 You get a very long output explaining in detail what occurred.
 
-### Step 5: Ask questions
+## Ask questions
 Now that you've indexed the document into the graph, you can ask it questions through ChatGpt.  
 Using the graphrag.query the first time generates a lancedb stored in the directory which is uses for any further questions.  
 
-#### Global questions
+### Global questions
 
 Use a global search for high-level questions and it can provide incredibly insightful responses worthy of a book critic, including citations:  
 ```
@@ -80,7 +82,7 @@ SUCCESS: Global Search Response: I am sorry but I am unable to answer this quest
 ```
 ![image](https://github.com/rcorvus/MicrosoftGraphRAG/assets/5025458/7b087e80-1084-4120-bd52-cbcb7b396f6d)  
 
-#### Local questions  
+### Local questions  
 Use a local search for more specific questions about a specific character.
 
 For example, the AI is able to deduce that Tiny Tim's last name must be Cratchit, making him "Tiny Tim Cratchit":  
