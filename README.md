@@ -1,6 +1,8 @@
 # Microsoft GraphRAG + ChatGPT 4 Turbo
 ## Using Microsoft GraphRAG + ChatGPT, we index the book "A Christmas Carol" and ask complex relationship questions about the text  
-As you can see in the responses below, the AI system is able to make surprisingly insightful responses, worthy of a book critic, including citations. However, it still struggles with the "Why?" questions.  It can even make deductions that are never explicitly spelled out in the text, such as knowing that Tiny Tim's last name must be Cratchit.  
+As you can see in the responses below, the AI system is able to make surprisingly insightful responses, worthy of a book critic, including citations. However, it still struggles with the "Why?" questions.  
+It can even make deductions that are never explicitly spelled out in the text, such as being able to correctly deduce that Tiny Tim's last name must be Cratchit, making him "Tiny Tim Cratchit".  
+
 The instructions on the Microsoft site are  *mostly*  complete, as is tradition :smile:, so I've included the the corrections below that actually make it work.  
 NOTE: ChatGPT 4 Turbo is pricey, and indexing this book cost about $5-$10 and took about 10-15 minutes.  
 I've already indexed the book in this repo, so you should be able to start asking questions straight away and save some time/money.  
@@ -38,6 +40,7 @@ Using the graphrag.query the first time generates a lancedb stored in the direct
 ### Global questions
 
 Use a global search for high-level questions and it can provide incredibly insightful responses worthy of a book critic, including citations:  
+#### "What are the top themes in this story?"  
 ```
 python -m graphrag.query --root ./ --method global "What are the top themes in this story?"
 ```
@@ -72,7 +75,7 @@ In conclusion, the story weaves together these themes to offer a rich tapestry o
 ![image](https://github.com/rcorvus/MicrosoftGraphRAG/assets/5025458/92b0cad4-81a2-476c-840d-2047ab7c999a)
 
 
-However, the AI still struggles with "Why?" questions:  
+#### However, the AI still struggles with "Why?" questions:  
 ```
 python -m graphrag.query --root ./ --method global "Why did Scrooge buy the Cratchit family a goose?"
 ```
@@ -85,11 +88,12 @@ SUCCESS: Global Search Response: I am sorry but I am unable to answer this quest
 ### Local questions  
 Use a local search for more specific questions about a specific character.
 
-For example, the AI is able to deduce that Tiny Tim's last name must be Cratchit, making him "Tiny Tim Cratchit":  
+#### "Who is Tiny Tim, what is his last name, and what are his main relationships?"
+The AI is able to correctly deduce that Tiny Tim's last name must be Cratchit, making him "Tiny Tim Cratchit":  
 ```
 python -m graphrag.query --root ./ --method local "Who is Tiny Tim, what is his last name, and what are his main relationships?"
 ```
-
+Response:  
 ```
 Tiny Tim is a pivotal character in the classic narrative, known for his optimistic outlook and the famous line he utters, symbolizing hope and goodwill.  
 
