@@ -1,3 +1,5 @@
+![image](https://github.com/rcorvus/MicrosoftGraphRAG/assets/5025458/b63e5200-713e-4211-b6ef-18af0066cd5f)
+
 # Microsoft GraphRAG + ChatGPT 4 Turbo
 ## Using Microsoft GraphRAG + ChatGPT, we index the book "A Christmas Carol" and ask complex relationship questions about the text  
 As you can see in the responses below, such as "What are the themes of the book?", the AI system is able to make surprisingly insightful responses, worthy of a book critic, including citations.  
