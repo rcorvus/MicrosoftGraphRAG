@@ -1,6 +1,6 @@
 # Microsoft GraphRAG + ChatGPT 4 Turbo
 ## Using Microsoft GraphRAG + ChatGPT, we index the book "A Christmas Carol" and ask complex relationship questions about the text  
-As you can see in the responses below, the AI system is able to make surprisingly insightful responses, worthy of a book critic, including citations.  
+As you can see in the responses below, such as "What are the themes of the book?", the AI system is able to make surprisingly insightful responses, worthy of a book critic, including citations.  
 It can even make deductions that are never explicitly spelled out in the text, such as being able to correctly deduce that Tiny Tim's last name must be Cratchit, making him "Tiny Tim Cratchit".  
 However, it still struggles with the "Why?" questions.  
 
