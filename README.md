@@ -29,7 +29,20 @@ Run the indexing pipeline, "A Christmas Carol" took about 10-15 minutes on my la
 You get a very long output explaining in detail what occurred.
 
 ### Step 5: Ask questions
-Now that you've indexed the document into the graph, you can ask it questions through ChatGpt.
+Now that you've indexed the document into the graph, you can ask it questions through ChatGpt.  
 
+#### Global questions
 
+Use a global search for high-level questions:  
+```
+python -m graphrag.query --root ./ --method global "What are the top themes in this story?"
+```
+```
+python -m graphrag.query --root ./ --method global "Why did Scrooge buy the Krachet family a goose?"
+```
+
+Use a local search for more specific questions about a specific character:  
+```
+python -m graphrag.query --root ./ --method local "Who is Tiny Tim, what is his last name, and what are his main relationships?"
+```
  
