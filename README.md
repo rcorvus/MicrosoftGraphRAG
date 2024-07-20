@@ -20,6 +20,8 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid 
 ⠋ GraphRAG Indexer
 ```
 The quick solution was to use Notepad to save the book and ensure it was saving the txt file as UTF-8.  
+![image](https://github.com/user-attachments/assets/8fd71cd2-8dfb-4dce-95c0-475cb5dbb16e)
+
 
 ### Step 3: Initialize the indexing pipeline  
 In the MicrosoftGraphRAG dir in your terminal run ```python -m graphrag.index --init --root ./```  
